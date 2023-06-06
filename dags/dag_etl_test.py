@@ -26,11 +26,11 @@ def load(ti):
   total_values = ti.xcom_pull(task_ids = 'transform')
   print(f'Total values: {total_values}')
 
-# test ETL 
+# ETL test
 with DAG(
   'etl_test',
-  start_date=datetime(2023,1,28),
-  schedule=timedelta(minutes=5),
+  start_date=datetime(2023,6,1),
+  schedule=timedelta(minutes=1),
   catchup=False,
   ) as dag:
 

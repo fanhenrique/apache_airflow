@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 
 # ETL TaskFlow test
 @dag(
-  start_date=datetime(2023,1,28),
-  schedule=timedelta(minutes=5),
+  start_date=datetime(2023,6,1),
+  schedule=timedelta(minutes=1),
   catchup=False,
   )
 def etl_taskflow():

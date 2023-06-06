@@ -3,7 +3,7 @@ from airflow.decorators import dag
 from datetime import datetime
 
 
-@dag(start_date=datetime(2023, 5, 27))
+@dag(start_date=datetime(2023, 6, 4))
 def use_add_task():
     start = add_task.override(priority_weight=3)(1, 2)
     for i in range(3):
